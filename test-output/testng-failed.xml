@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.automation.ExtentReportListener.ExtentReporterListener"/>
+  </listeners>
+  <test name="Automation Challenge Test Execution(failed)">
     <classes>
-      <class name="com.automation.tests.CategoryPageTest">
+      <class name="com.automation.tests.PaymentConfirmOrderPageTest">
         <methods>
-          <include name="verifyselectItemAndCheckOut"/>
-          <include name="setup"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verifyPaymentPageTextAndTitle"/>
         </methods>
-      </class> <!-- com.automation.tests.CategoryPageTest -->
+      </class> <!-- com.automation.tests.PaymentConfirmOrderPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Automation Challenge Test Execution(failed) -->
+</suite> <!-- Failed suite [Test Automation Test Suite] -->

@@ -6,20 +6,13 @@
   </listeners>
   <test name="Automation Challenge Test Execution(failed)">
     <classes>
-      <class name="com.automation.tests.CategoryPageTest">
+      <class name="com.automation.tests.PaymentConfirmOrderPageTest">
         <methods>
-          <include name="verifyselectItemAndCheckOut"/>
-          <include name="setup"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verifyPaymentPageTextAndTitle"/>
         </methods>
-      </class> <!-- com.automation.tests.CategoryPageTest -->
-      <class name="com.automation.tests.CreateAccountPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="verifyElementDoesNotExistForCountrySelection"/>
-        </methods>
-      </class> <!-- com.automation.tests.CreateAccountPageTest -->
+      </class> <!-- com.automation.tests.PaymentConfirmOrderPageTest -->
     </classes>
   </test> <!-- Automation Challenge Test Execution(failed) -->
 </suite> <!-- Failed suite [Test Automation Test Suite] -->
